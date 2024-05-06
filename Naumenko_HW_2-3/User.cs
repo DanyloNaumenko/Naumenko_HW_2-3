@@ -14,7 +14,7 @@ namespace Naumenko_HW_2_3
         public Gender Gender { get; set; }
 
         public User() { }
-        public User(string age)
+        public User(int age)
         {
             Age = age;
         }
@@ -29,7 +29,7 @@ namespace Naumenko_HW_2_3
             }
             else
             {
-                result.Append("I am {20} years old");
+                result.Append($"I am {20} years old");
             }
 
             if(Gender != Gender.Unknown)
