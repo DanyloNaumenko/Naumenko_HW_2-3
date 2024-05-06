@@ -10,7 +10,7 @@ namespace Naumenko_HW_2_3
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public int Age { get; }
+        public int Age { get; } = 0;
         public Gender Gender { get; set; }
 
         public User() { }
@@ -22,15 +22,8 @@ namespace Naumenko_HW_2_3
         public override string ToString()
         {
             var result = new StringBuilder();
-            result.Append($"Hi, my name is {FirstName} and last name {LastName}");
-            if(Age >= 10)
-            {
-                result.Append("I am a baby");
-            }
-            else
-            {
-                result.Append($"I am {20} years old");
-            }
+            result.Append($"Hi, my name is {FirstName} and last name {LastName}. ");
+            result.Append(Age >= 10 ? $"I am {Age} years old. " : "I am a baby. ");
 
             if(Gender != Gender.Unknown)
             {
