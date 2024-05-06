@@ -36,6 +36,7 @@ namespace Naumenko_HW_2_3
             {
                 result.Append($"I am {Gender}.");
             }
+            return result.ToString();
         }
     }
 }
